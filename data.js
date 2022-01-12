@@ -112,7 +112,7 @@ const icons =
 			family: 'fas',
 			color: 'blue'
 		}
-	];
+	];	
 
 const containerCard = document.querySelector('.containerCard');
 	
