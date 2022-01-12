@@ -1,0 +1,37 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerCard
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px;
+}
+
+.card 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #010101;
+    margin: 16px;
+}
+
+.card .icon i
+{
+    font-size: 32px;
+    margin: 8px;
+} 
+
+.card .text span
+{
+    font-size: 16px;
+    text-transform: uppercase;
+} 
