@@ -29,7 +29,7 @@
     text-align: center;
     width: 200px;
     height: 100px;
-    background-color: lightcyan;
+    background-color: lightcyan/*  */;
     border-radius: 15px;
     margin: 16px;
 }

@@ -1,4 +1,4 @@
-const icons = 
+const icone = 
 	[
 		{
 			name: 'cat',
@@ -114,51 +114,19 @@ const icons =
 		}
 	];	
 
+	const contenitore = document.getElementById("icons-container");
 
-const containerCard = document.querySelector('.containerCard');
-const selectFiltri = document.getElementById('selectFiltri');
+	icone.forEach((elemento) => {
+		contenitore.innerHTML += getBoxCode(elemento);
+	});
 
-function creaCard(counter)
-{
 
-	containerCard.innerHTML += 
-	`
-    <div class="card">
-        <div id="icon" class="icon">
-            <i class="fas fa-${icons[counter].name}"></i>
-        </div>
-        <div class="text">
-            <span>${icons[counter].name}</span>
-        </div>           
-    </div>	
-	`
-}
-
-function rimuoviCard()
-{
-	containerCard.innerHTML = '';
-}
-
-// funzione ( icons[i].type == valore) 
-
-/* for(let x = 0; x < icons.length; x++)
-{
-	creaCard(x);
-} */
-
-selectFiltri.addEventListener('change' , function()
-{
-	rimuoviCard();
-	let valore = selectFiltri.value;
-
-	for(let i = 0; i < icons.length; i++)
+	function getBoxCode(icona)
 	{
-		if(icons[i].type == valore)
-		{
-			console.log(icons[i].type)
-			creaCard(i);
-		}
-/* 		let idIcon = document.getElementsByTagName('i');
-		idIcon[i].style.color = icons[i].color;  */
+	contenitore.innerHTML = "lista box";
+	`
+
+		<i class="fas fa-cat" style="color:blue;"></i>
+		<div class="">cat</div>
+	`
 	}
-});
